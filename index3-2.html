@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML For Submit</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+	</head>
+	<style type="text/css">
+		@import url("styles.css");
+	</style>
+	<body>
+		
+		<form action="/submit" method="post">
+		<h1>个人资料</h1>
+		<p>姓名:</p>
+		<input type="text" name="xm" value="" placeholder="username" /><br />
+		<p>密码:</p>
+		<input type="password" name="password" placeholder="password"><br />
+		<p>性别:</p>
+		<input type="radio" name="gender" value="man" />男<br />
+		<input type="radio" name="gender" value="woman" />女<br />
+		<p>爱好:</p>
+		<input type="checkbox" name="hobby" value="code" />编程<br>
+		<input type="checkbox" name="hobby" value="sports" />体育<br>
+		<input type="checkbox" name="hobby" value="music" />音乐<br>
+		<input type="checkbox" name="hobby" value="travel" />旅行<br>
+		<input type="checkbox" name="hobby" value="reading" />阅读<br>
+		<input type="checkbox" name="hobby" value="game" />游戏<br>
+		<p>国家:</p>
+		<select name="country" id="">
+			<option value="usa">USA</option>
+			<option value="canada">Canada</option>
+			<option value="uk">UK</option>
+			<option value="australia">Australia</option>
+			<option value="germany">Germany</option>
+			<option value="france">France</option>
+			<option value="japan">Japan</option>
+			<option value="india">India</option>
+			<option value="china">China</option>
+			<option value="brazil">Brazil</option>
+		</select><br />
+		<p>个人简历:</p>
+		<textarea name="comments" id="" cols="50" rows="4" placeholder="Comments"></textarea><br />
+		<input type="submit" value="提交" >
+		<input type="reset" value="重置" >
+		</form>
+	</body>
+</html>
